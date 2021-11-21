@@ -1,4 +1,4 @@
-package data.nopcommerce;
+package com.data.nopcommerce;
 
 public class AdminTestData {
 

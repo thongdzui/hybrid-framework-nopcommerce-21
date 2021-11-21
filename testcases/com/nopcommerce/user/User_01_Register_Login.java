@@ -1,27 +1,38 @@
 package com.nopcommerce.user;
 
-import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 public class User_01_Register_Login {
-	
-  @BeforeClass
-  public void beforeClass() {
-  }
-  
-  @Test
-  public void User_01_Register_To_System() {
-  }
-  @Test
-  public void User_02_Login_To_System() {
-  }
-  @Test
-  public void User_01_Verify_My_Account() {
-  }
+	WebDriver driver;
+	String projectPath = System.getProperty("user.dir");
 
-  @AfterTest
-  public void afterTest() {
-  }
+	@BeforeClass
+	public void beforeClass() {
+		System.setProperty("webdriver.gecko.driver", projectPath + "/browserDriver/geckodriver");
+		driver = new FirefoxDriver();
+
+		driver.get("https://demo.nopcommerce.com/");
+	}
+
+	@Test
+	public void TC_01() {
+	}
+
+	@Test
+	public void TC_02() {
+	}
+
+	@Test
+	public void TC_03() {
+	}
+
+	@AfterTest
+	public void afterTest() {
+		driver.quit();
+	}
 
 }
