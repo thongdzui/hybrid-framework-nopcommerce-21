@@ -3,7 +3,9 @@ package commons;
 import java.util.Set;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -109,5 +111,29 @@ public class BasePage {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	/* Web Element */
+	public By getByXpath(String xpathExpression) {
+		return By.xpath(xpathExpression);
+	}
+
+	public WebElement getWebElement(WebDriver driver, String xpathExpression) {
+		return driver.findElement(getByXpath(xpathExpression));
+
+	}
+
+	public void clickToElement(WebDriver driver, String xpathExpression) {
+		getWebElement(driver, xpathExpression).click();
+	}
+
+	public void sendkeyToElement(WebDriver driver, String xpathExpression, String value) {
+		driver.findElement(By.xpath(xpathExpression)).clear();
+		driver.findElement(By.xpath(xpathExpression)).sendKeys(value);
+	}
+
+	public String getElementText(WebDriver driver, String xpathExpression) {
+		return driver.findElement(By.xpath(xpathExpression)).getText();
+
 	}
 }
