@@ -5,8 +5,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -25,9 +23,7 @@ public class Level_03_Register_Base_Object_Pattern_Part1 extends BasePage {
 	private HomePageObject homePage;
 	private RegisterPageObject registerPage;
 	String projectPath = System.getProperty("user.dir");
-	Select select;
 	WebDriverWait explicitWait;
-	Actions action;
 
 	@BeforeClass
 	public void beforeClass() {
@@ -36,7 +32,6 @@ public class Level_03_Register_Base_Object_Pattern_Part1 extends BasePage {
 
 		System.out.println("Driver id của class là " + driver.toString());
 		explicitWait = new WebDriverWait(driver, 30);
-		action = new Actions(driver);
 
 		emailAddress = "afc" + generateFakeNumber() + "@mail.vn";
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -256,7 +251,7 @@ public class Level_03_Register_Base_Object_Pattern_Part1 extends BasePage {
 		 */
 
 		registerPage.clickToRegisterButton();
-		clickToElement(driver, "//button[@id='register-button']");
+
 		// driver.findElement(By.cssSelector("button#register-button")).click();
 
 		Assert.assertEquals(registerPage.getConfirmPasswordErrorMessage(), "The password and confirmation password do not match.");
