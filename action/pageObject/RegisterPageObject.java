@@ -11,7 +11,6 @@ public class RegisterPageObject extends BasePage {
 	public RegisterPageObject(WebDriver _driver) {
 		driver = _driver;
 		System.out.println("Driver ID của RegisterPageObject" + driver.toString());
-
 	}
 
 	public void clickToRegisterButton() {
@@ -83,10 +82,12 @@ public class RegisterPageObject extends BasePage {
 
 	}
 
-	public void clickToLogoutLink() {
+	public HomePageObject clickToLogoutLink() {
 		waitForElementClickable(driver, RegisterPageUI.LOGOUT_LINK);
 
 		clickToElement(driver, RegisterPageUI.LOGOUT_LINK);
+		// return new HomePageObject(driver);
+		return PageGeneratorManager.getHomePage(driver);
 
 	}
 

@@ -13,7 +13,6 @@ public class HomePageObject extends BasePage {
 		this.driver = driver;
 		System.out.println("Driver id của HomePageObject" + driver.toString());
 		PageFactory.initElements(driver, this);
-
 	}
 
 	@FindBy(xpath = "//a[@class='ico-register']")

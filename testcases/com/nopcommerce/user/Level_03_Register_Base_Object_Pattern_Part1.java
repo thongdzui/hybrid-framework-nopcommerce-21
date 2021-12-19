@@ -11,12 +11,11 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import commons.BasePage;
 import pageObject.HomePageObject;
 import pageObject.RegisterPageObject;
 
 //class A kế thừa class B, có thể dùng các thuộc tính B, B là cha của A
-public class Level_03_Register_Base_Object_Pattern_Part1 extends BasePage {
+public class Level_03_Register_Base_Object_Pattern_Part1 {
 	private WebDriver driver;
 	private String emailAddress;
 	// import class HomePageObject
@@ -208,12 +207,6 @@ public class Level_03_Register_Base_Object_Pattern_Part1 extends BasePage {
 		 * "//input[@id='ConfirmPassword']","123");
 		 */
 
-		/*
-		 * driver.findElement(By.cssSelector("input#FirstName")).sendKeys("Automation"); driver.findElement(By.cssSelector("input#LastName")).sendKeys("FC");
-		 * driver.findElement(By.cssSelector("input#Email")).sendKeys(emailAddress); driver.findElement(By.cssSelector("input#Password")).sendKeys("123");
-		 * driver.findElement(By.cssSelector("input#ConfirmPassword")).sendKeys("123");
-		 */
-
 		registerPage.clickToRegisterButton();
 		// clickToElement(driver, "//button[@id='register-button']");
 		// driver.findElement(By.cssSelector("button#register-button")).click();
@@ -223,9 +216,6 @@ public class Level_03_Register_Base_Object_Pattern_Part1 extends BasePage {
 		// characters");
 	}
 
-	/**
-	 * 
-	 */
 	@Test
 	public void TC_06_Register_Invalid_Confirm_Password() {
 		homePage.clickToRegisterLink();

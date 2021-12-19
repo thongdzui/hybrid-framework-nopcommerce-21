@@ -25,29 +25,40 @@ public class HomePageObject extends BasePage {
 
 	}
 
-	public void clickToRegisterLink() {
-		// TODO Auto-generated method stub
+	public RegisterPageObject clickToRegisterLink() {
 		// gán biến đó bằng static = truy cập trực tiếp từ class
 		// waitForElementClickable(driver, homePageUI.REGISTER_LINK);
 		// clickToElement(driver, homePageUI.REGISTER_LINK);
 
 		waitForElementClickable(driver, HomePageUI.REGISTER_LINK);
 		clickToElement(driver, HomePageUI.REGISTER_LINK);
+		// return new RegisterPageObject(driver);
+		return PageGeneratorManager.getRegisterPage(driver);
 
 		// System.out.println(HomePageUI.REGISTER_LINK);
 		// System.out.println(homePageUI.loginLink);
 
 	}
 
-	public void clickToLoginLink() {
+	public LoginPageObject clickToLoginLink() {
 		waitForElementClickable(driver, HomePageUI.LOGIN_LINK);
 		clickToElement(driver, HomePageUI.LOGIN_LINK);
+		// return new LoginPageObject(driver);
+		return PageGeneratorManager.getLoginPage(driver);
 
 	}
 
 	public boolean isMyAccountLinkDisplay() {
 		waitForElementVisible(driver, HomePageUI.MY_ACCOUNT_LINK);
 		return isElementDisplayed(driver, HomePageUI.MY_ACCOUNT_LINK);
+	}
+
+	public CustomerInfoPageObject clickToMyAccountLink() {
+		waitForElementClickable(driver, HomePageUI.MY_ACCOUNT_LINK);
+		clickToElement(driver, HomePageUI.MY_ACCOUNT_LINK);
+		// return new CustomerInfoPageObject(driver);
+		return PageGeneratorManager.getCustomerInfoPage(driver);
+
 	}
 
 }

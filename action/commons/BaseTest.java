@@ -15,15 +15,16 @@ public class BaseTest {
 
 	public WebDriver getBrowserDriver(String browserName) {
 		// dùng Web Driver Manager
-		BrowserLists browser = BrowserLists.valueOf(browserName.toUpperCase());
+		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
 
-		if (browser == BrowserLists.FIREFOX) {
+		if (browser == BrowserList.FIREFOX) {
 			WebDriverManager.firefoxdriver().setup();
+
 			driver = new FirefoxDriver();
-		} else if (browser == BrowserLists.CHROME) {
+		} else if (browser == BrowserList.CHROME) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-		} else if (browser == BrowserLists.EDGE) {
+		} else if (browser == BrowserList.EDGE) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		} else {
@@ -55,6 +56,7 @@ public class BaseTest {
 		 */
 
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		// 1. Mở URL ra thì nó sẽ mở ra trang Home Page (Business page)
 		driver.get("https://demo.nopcommerce.com/");
 

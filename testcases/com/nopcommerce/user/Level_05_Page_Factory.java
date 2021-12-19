@@ -198,7 +198,6 @@ public class Level_05_Page_Factory extends BaseTest {
 	public void TC_05_Register_Password_Less_Than_6_Chars() {
 		homePage.clickToRegisterLink();
 		// clickToElement(driver, "//a[@class='ico-register']");
-		// driver.findElement(By.cssSelector("a.ico-register")).click();
 
 		registerPage.sendkeyToFirstNameTextbox("Automation");
 		registerPage.sendkeyToLastNameTextbox("FC");
@@ -227,9 +226,6 @@ public class Level_05_Page_Factory extends BaseTest {
 		// characters");
 	}
 
-	/**
-	 * 
-	 */
 	@Test
 	public void TC_06_Register_Invalid_Confirm_Password() {
 		homePage.clickToRegisterLink();

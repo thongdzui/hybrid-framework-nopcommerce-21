@@ -13,10 +13,12 @@ public class LoginPageObject extends BasePage {
 		System.out.println("Driver id của LoginPageObject" + driver.toString());
 	}
 
-	public void clicktoLoginButton() {
+	public HomePageObject clicktoLoginButton() {
 		waitForElementClickable(driver, LoginPageUI.LOGIN_BUTTON);
 
 		clickToElement(driver, LoginPageUI.LOGIN_BUTTON);
+		// return new HomePageObject(driver);
+		return PageGeneratorManager.getHomePage(driver);
 
 	}
 
@@ -28,7 +30,6 @@ public class LoginPageObject extends BasePage {
 	public void sendkeyToEmailTextBox(String email) {
 		waitForElementVisible(driver, LoginPageUI.EMAIL_TEXTBOX);
 		sendkeyToElement(driver, LoginPageUI.EMAIL_TEXTBOX, email);
-
 	}
 
 	public String getErrorMessageUnsuccessful() {

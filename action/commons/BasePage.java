@@ -140,7 +140,6 @@ public class BasePage {
 
 	public WebElement getWebElement(WebDriver driver, String xpathExpression) {
 		return driver.findElement(getByXpath(xpathExpression));
-
 	}
 
 	public List<WebElement> getWebElements(WebDriver driver, String xpathExpression) {

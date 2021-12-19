@@ -166,7 +166,6 @@ public class Level_04_Multi_Browser extends BaseTest {
 
 		homePage.clickToRegisterLink();
 		// clickToElement(driver, "//a[@class='ico-register']");
-		// driver.findElement(By.cssSelector("a.ico-register")).click();
 
 		registerPage.sendkeyToFirstNameTextbox("Automation");
 		registerPage.sendkeyToLastNameTextbox("FC");

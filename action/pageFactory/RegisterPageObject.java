@@ -12,7 +12,6 @@ public class RegisterPageObject extends BasePage {
 		this.driver = driver;
 		System.out.println("Driver ID của RegisterPageObject" + driver.toString());
 		PageFactory.initElements(driver, this);
-
 	}
 
 	@FindBy(id = "register-button")

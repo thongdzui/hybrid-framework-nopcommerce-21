@@ -17,7 +17,7 @@ import pageObject.LoginPageObject;
 import pageObject.RegisterPageObject;
 
 //class A kế thừa class B, có thể dùng các thuộc tính B, B là cha của A
-public class Level_03_Login_Base_Object_Pattern_Part2 /* extends BasePage */ {
+public class Level_03_Login_Base_Object_Pattern_Part2 {
 	private WebDriver driver;
 	private String existingEmail, notFoundEmail, invalidEmail, firstName, lastName, validPassword;
 	// import class HomePageObject
