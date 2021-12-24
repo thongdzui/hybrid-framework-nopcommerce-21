@@ -16,6 +16,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObject.AddressesPageObject;
+import pageObject.CustomerInfoPageObject;
+import pageObject.OrderPageObject;
+import pageObject.PageGeneratorManager;
+import pageObject.RewardPointPageObject;
+import pageUIs.BasePageUI;
+
 public class BasePage {
 	public static BasePage getBasePage() {
 		return new BasePage();
@@ -356,6 +363,36 @@ public class BasePage {
 
 	public void waitForAllElementClickable(WebDriver driver, String xpathExpression) {
 		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.invisibilityOfAllElements(getWebElements(driver, xpathExpression)));
+	}
+
+	// Từ 56 hàm ruốt ngắn còn 8 hàm mở 8 page
+	// demo 4 page có 4 hàm
+	public OrderPageObject clickToOrderLink(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.ORDER_PAGE_LINK);
+		clickToElement(driver, BasePageUI.ORDER_PAGE_LINK);
+		// return new LoginPageObject(driver);
+		return PageGeneratorManager.getOrderPage(driver);
+	}
+
+	public AddressesPageObject clickToAddressesPage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.ADDRESSES_PAGE_LINK);
+		clickToElement(driver, BasePageUI.ADDRESSES_PAGE_LINK);
+		// return new LoginPageObject(driver);
+		return PageGeneratorManager.getAddressesPage(driver);
+	}
+
+	public RewardPointPageObject clickToRewardPointLink(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.REWARD_POINT_LINK);
+		clickToElement(driver, BasePageUI.REWARD_POINT_LINK);
+		// return new LoginPageObject(driver);
+		return PageGeneratorManager.getRewardPointPage(driver);
+	}
+
+	public CustomerInfoPageObject clickToCustomerInfoLink(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.CUTOMER_INFO_LINK);
+		clickToElement(driver, BasePageUI.CUTOMER_INFO_LINK);
+		// return new LoginPageObject(driver);
+		return PageGeneratorManager.getCustomerInfoPage(driver);
 	}
 
 	private long longTimeout = 30;
