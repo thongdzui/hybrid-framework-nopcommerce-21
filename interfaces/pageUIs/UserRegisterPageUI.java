@@ -1,6 +1,6 @@
 package pageUIs;
 
-public class RegisterPageUI {
+public class UserRegisterPageUI {
 	public static final String REGISTER_BUTTON = "//button[@id='register-button']";
 	public static final String LOGOUT_LINK = "//a[@class='ico-logout']";
 	public static final String FRIST_NAME_ERROR_MESSAGE = "//span[@id='FirstName-error']";

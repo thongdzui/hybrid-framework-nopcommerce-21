@@ -24,10 +24,10 @@ public class Level_05_Page_Factory extends BaseTest {
 
 	WebDriverWait explicitWait;
 
-	@Parameters("browser")
+	@Parameters({ "browser", "url" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
+	public void beforeClass(String browserName, String url) {
+		driver = getBrowserDriver(browserName, url);
 
 		/*
 		 * switch (browserName) { case "firefox": System.setProperty("webdriver.gecko.driver", projectPath + "/browserDriver/geckodriver"); driver = new

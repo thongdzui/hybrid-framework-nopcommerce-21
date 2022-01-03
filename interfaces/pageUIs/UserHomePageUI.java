@@ -1,6 +1,6 @@
 package pageUIs;
 
-public class HomePageUI {
+public class UserHomePageUI {
 	// locator của search button
 	// locator của user name text box
 	// static final là hằng số, viết hoa

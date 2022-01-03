@@ -1,13 +1,13 @@
-package pageObject;
+package pageObject.users;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
 
-public class OrderPageObject extends BasePage {
+public class UserOrderPageObject extends BasePage {
 	private WebDriver driver;
 
-	public OrderPageObject(WebDriver _driver) {
+	public UserOrderPageObject(WebDriver _driver) {
 		driver = _driver;
 		System.out.println("Driver id của OrderPageObject" + driver.toString());
 

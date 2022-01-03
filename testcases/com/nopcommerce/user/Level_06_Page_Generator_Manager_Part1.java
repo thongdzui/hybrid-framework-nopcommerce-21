@@ -11,30 +11,30 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObject.CustomerInfoPageObject;
-import pageObject.HomePageObject;
-import pageObject.LoginPageObject;
-import pageObject.RegisterPageObject;
+import pageObject.users.UserCustomerInfoPageObject;
+import pageObject.users.UserHomePageObject;
+import pageObject.users.UserLoginPageObject;
+import pageObject.users.UserRegisterPageObject;
 
 //class A kế thừa class B, có thể dùng các thuộc tính B, B là cha của A
 public class Level_06_Page_Generator_Manager_Part1 extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, emailAddress, password;
 	// import class HomePageObject
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private CustomerInfoPageObject customerInfo;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserCustomerInfoPageObject customerInfo;
 
 	WebDriverWait explicitWait;
 
-	@Parameters("browser")
+	@Parameters({ "browser", "url" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
+	public void beforeClass(String browserName, String url) {
 		// Đưa việc khởi tạo page vào chính class test
 		// 1) mở url thì nó mở trang homepage bussiness
-		driver = getBrowserDriver(browserName);
-		homePage = new HomePageObject(driver);
+		driver = getBrowserDriver(browserName, url);
+		homePage = new UserHomePageObject(driver);
 
 		emailAddress = "afc" + generateFakeNumber() + "@mail.net";
 		firstName = "Automation";
@@ -50,7 +50,7 @@ public class Level_06_Page_Generator_Manager_Part1 extends BaseTest {
 		homePage.clickToRegisterLink();
 
 		// 2) Từ Home page qua Register page khởi tạo Register page lên
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.sendkeyToFirstNameTextbox(firstName);
 		registerPage.sendkeyToLastNameTextbox(lastName);
@@ -64,7 +64,7 @@ public class Level_06_Page_Generator_Manager_Part1 extends BaseTest {
 
 		registerPage.clickToLogoutLink();
 		// 3)Từ Register chuyển về Home page khởi tạo lại trang Home Page
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 	}
 
@@ -73,7 +73,7 @@ public class Level_06_Page_Generator_Manager_Part1 extends BaseTest {
 
 		homePage.clickToLoginLink();
 		// 4)Từ trang homepage chuyển qua Login page
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.sendkeyToEmailTextBox(emailAddress);
 		loginPage.sendkeyToPasswordTextBox(password);
@@ -81,7 +81,7 @@ public class Level_06_Page_Generator_Manager_Part1 extends BaseTest {
 		loginPage.clicktoLoginButton();
 
 		// 5) login thành công chuyển qua homepage
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 	}
 
@@ -90,7 +90,7 @@ public class Level_06_Page_Generator_Manager_Part1 extends BaseTest {
 
 		homePage.clickToMyAccountLink();
 		// 6Từ trang Login chuyển qua Customer info page
-		customerInfo = new CustomerInfoPageObject(driver);
+		customerInfo = new UserCustomerInfoPageObject(driver);
 
 		Assert.assertEquals(customerInfo.getFirstNameTextboxValue(), firstName);
 		Assert.assertEquals(customerInfo.getLastNameTextboxValue(), lastName);

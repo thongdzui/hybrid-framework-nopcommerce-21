@@ -12,18 +12,18 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObject.HomePageObject;
-import pageObject.LoginPageObject;
-import pageObject.RegisterPageObject;
+import pageObject.users.UserHomePageObject;
+import pageObject.users.UserLoginPageObject;
+import pageObject.users.UserRegisterPageObject;
 
 //class A kế thừa class B, có thể dùng các thuộc tính B, B là cha của A
 public class Level_03_Login_Base_Object_Pattern_Part2 {
 	private WebDriver driver;
 	private String existingEmail, notFoundEmail, invalidEmail, firstName, lastName, validPassword;
 	// import class HomePageObject
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
 	String projectPath = System.getProperty("user.dir");
 	Select select;
 	WebDriverWait explicitWait;
@@ -47,13 +47,13 @@ public class Level_03_Login_Base_Object_Pattern_Part2 {
 
 		// 1. Mở URL ra thì nó sẽ mở ra trang Home Page (Business page)
 		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		// Chuyển trang business thì khởi tạo page object class lên
 
 		System.out.println("Pre-condition - Step 01: Click to Register Link");
 		homePage.clickToRegisterLink();
 
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		System.out.println("Pre-condition - Step 02: Input to require filed");
 
 		registerPage.sendkeyToFirstNameTextbox(firstName);
@@ -70,7 +70,7 @@ public class Level_03_Login_Base_Object_Pattern_Part2 {
 
 		registerPage.clickToLogoutLink();
 		// Chuyển trang business thì khởi tạo page object class lên
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 	}
 
@@ -79,7 +79,7 @@ public class Level_03_Login_Base_Object_Pattern_Part2 {
 
 		homePage.clickToLoginLink();
 		// từ trang home click Login qua trang login
-		loginPage = new LoginPageObject(driver);
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.clicktoLoginButton();
 
 		Assert.assertEquals(loginPage.getErrorMessageAtEmailTextBox(), "Please enter your email");
@@ -134,7 +134,7 @@ public class Level_03_Login_Base_Object_Pattern_Part2 {
 		loginPage.sendkeyToPasswordTextBox(validPassword);
 		loginPage.clicktoLoginButton();
 		// login thành công qua trang Homepage
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 		Assert.assertTrue(homePage.isMyAccountLinkDisplay());
 

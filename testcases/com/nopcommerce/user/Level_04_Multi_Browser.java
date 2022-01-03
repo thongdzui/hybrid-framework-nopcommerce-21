@@ -11,23 +11,23 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObject.HomePageObject;
-import pageObject.RegisterPageObject;
+import pageObject.users.UserHomePageObject;
+import pageObject.users.UserRegisterPageObject;
 
 //class A kế thừa class B, có thể dùng các thuộc tính B, B là cha của A
 public class Level_04_Multi_Browser extends BaseTest {
 	private WebDriver driver;
 	private String emailAddress;
 	// import class HomePageObject
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
 
 	WebDriverWait explicitWait;
 
-	@Parameters("browser")
+	@Parameters({ "browser", "url" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
+	public void beforeClass(String browserName, String url) {
+		driver = getBrowserDriver(browserName, url);
 
 		/*
 		 * switch (browserName) { case "firefox": System.setProperty("webdriver.gecko.driver", projectPath + "/browserDriver/geckodriver"); driver = new
@@ -42,7 +42,7 @@ public class Level_04_Multi_Browser extends BaseTest {
 		System.out.println("Driver id của class là " + driver.toString());
 		explicitWait = new WebDriverWait(driver, 30);
 
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		// Chuyển trang business thì khởi tạo page object class lên
 	}
 
@@ -55,7 +55,7 @@ public class Level_04_Multi_Browser extends BaseTest {
 		// clickToElement(driver, "//a[@class='ico-register']");
 
 		// khởi tạo Register page lên
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		registerPage.clickToRegisterButton();
 		// clickToElement(driver, "//button[@id='register-button']");
 
@@ -90,7 +90,7 @@ public class Level_04_Multi_Browser extends BaseTest {
 		// clickToElement(driver, "//a[@class='ico-register']");
 		// driver.findElement(By.cssSelector("a.ico-register")).click();
 		// khởi tạo lại Register page
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.sendkeyToFirstNameTextbox("Automation");
 		registerPage.sendkeyToLastNameTextbox("FC");
@@ -124,7 +124,7 @@ public class Level_04_Multi_Browser extends BaseTest {
 	public void TC_03_Register_Success() {
 		homePage.clickToRegisterLink();
 		// khởi tạo lại Register page
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		// clickToElement(driver, "//a[@class='ico-register']");
 		// driver.findElement(By.cssSelector("a.ico-register")).click();
 
@@ -158,7 +158,7 @@ public class Level_04_Multi_Browser extends BaseTest {
 		// clickToElement(driver, "//a[@class='ico-logout']");
 		// driver.findElement(By.cssSelector("a.ico-logout")).click();
 		// khởi tạo lại trang homePage
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 	}
 
 	@Test

@@ -11,31 +11,31 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObject.CustomerInfoPageObject;
-import pageObject.HomePageObject;
-import pageObject.LoginPageObject;
-import pageObject.RegisterPageObject;
+import pageObject.users.UserCustomerInfoPageObject;
+import pageObject.users.UserHomePageObject;
+import pageObject.users.UserLoginPageObject;
+import pageObject.users.UserRegisterPageObject;
 
 //class A kế thừa class B, có thể dùng các thuộc tính B, B là cha của A
 public class Level_06_Page_Generator_Manager_Part2 extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, emailAddress, password;
 	// import class HomePageObject
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private CustomerInfoPageObject customerInfo;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserCustomerInfoPageObject customerInfo;
 
 	WebDriverWait explicitWait;
 
-	@Parameters("browser")
+	@Parameters({ "browser", "url" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
+	public void beforeClass(String browserName, String url) {
 		// Đưa việc khởi tạo vào trong 1 hàm trc đó
 		// 1) mở url thì nó mở trang homepage bussiness
-		driver = getBrowserDriver(browserName);
+		driver = getBrowserDriver(browserName, url);
 		// chưa xử lý dc khúc này
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 
 		emailAddress = "afc" + generateFakeNumber() + "@mail.net";
 		firstName = "Automation";

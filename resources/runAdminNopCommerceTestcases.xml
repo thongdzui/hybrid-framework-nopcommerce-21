@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="NopCommerce" parallel="false">
 
+  <parameter name="url" value="https://admin-demo.nopcommerce.com/" />
+
  <!--  <test name="Run on FIREFOX">
   <parameter name="browser" value="firefox" />
     <classes>
@@ -11,7 +13,7 @@
     <test name="Run on CHROME">
   	<parameter name="browser" value="chrome" />
     	<classes>
-      		<class name="com.nopcommerce.user.Level_07_Switch_Page"/>    
+      		<class name="com.nopcommerce.user.Level_08_Switch_Role_Admin"/>    
     	</classes>
     </test>  
     

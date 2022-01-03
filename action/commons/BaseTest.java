@@ -13,13 +13,12 @@ public class BaseTest {
 	private WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
 
-	public WebDriver getBrowserDriver(String browserName) {
+	public WebDriver getBrowserDriver(String browserName, String urlValue) {
 		// dùng Web Driver Manager
 		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
 
 		if (browser == BrowserList.FIREFOX) {
 			WebDriverManager.firefoxdriver().setup();
-
 			driver = new FirefoxDriver();
 		} else if (browser == BrowserList.CHROME) {
 			WebDriverManager.chromedriver().setup();
@@ -58,7 +57,7 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		// 1. Mở URL ra thì nó sẽ mở ra trang Home Page (Business page)
-		driver.get("https://demo.nopcommerce.com/");
+		driver.get(urlValue);
 
 		return driver;
 	}

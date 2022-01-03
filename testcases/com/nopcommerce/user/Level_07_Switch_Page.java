@@ -11,38 +11,38 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObject.AddressesPageObject;
-import pageObject.CustomerInfoPageObject;
-import pageObject.HomePageObject;
-import pageObject.LoginPageObject;
-import pageObject.OrderPageObject;
-import pageObject.PageGeneratorManager;
-import pageObject.RegisterPageObject;
-import pageObject.RewardPointPageObject;
+import commons.PageGeneratorManager;
+import pageObject.users.UserAddressesPageObject;
+import pageObject.users.UserCustomerInfoPageObject;
+import pageObject.users.UserHomePageObject;
+import pageObject.users.UserLoginPageObject;
+import pageObject.users.UserOrderPageObject;
+import pageObject.users.UserRegisterPageObject;
+import pageObject.users.UserRewardPointPageObject;
 
 //class A kế thừa class B, có thể dùng các thuộc tính B, B là cha của A
 public class Level_07_Switch_Page extends BaseTest {
 	private WebDriver driver;
 	private String firstName, lastName, emailAddress, password;
 	// import class HomePageObject
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
-	private LoginPageObject loginPage;
-	private CustomerInfoPageObject customerInfo;
-	private OrderPageObject orderPage;
-	private RewardPointPageObject rewardPointPage;
-	private AddressesPageObject addressesPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
+	private UserLoginPageObject loginPage;
+	private UserCustomerInfoPageObject customerInfo;
+	private UserOrderPageObject orderPage;
+	private UserRewardPointPageObject rewardPointPage;
+	private UserAddressesPageObject addressesPage;
 
 	WebDriverWait explicitWait;
 
-	@Parameters("browser")
+	@Parameters({ "browser", "url" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
+	public void beforeClass(String browserName, String url) {
 		// Đưa việc khởi tạo vào trong 1 hàm trc đó
 		// 1) mở url thì nó mở trang homepage bussiness
-		driver = getBrowserDriver(browserName);
+		driver = getBrowserDriver(browserName, url);
 		// chưa xử lý dc khúc này
-		homePage = PageGeneratorManager.getHomePage(driver);
+		homePage = PageGeneratorManager.getUserHomePage(driver);
 
 		emailAddress = "afc" + generateFakeNumber() + "@mail.net";
 		firstName = "Automation";

@@ -11,16 +11,16 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pageObject.HomePageObject;
-import pageObject.RegisterPageObject;
+import pageObject.users.UserHomePageObject;
+import pageObject.users.UserRegisterPageObject;
 
 //class A kế thừa class B, có thể dùng các thuộc tính B, B là cha của A
 public class Level_03_Register_Base_Object_Pattern_Part1 {
 	private WebDriver driver;
 	private String emailAddress;
 	// import class HomePageObject
-	private HomePageObject homePage;
-	private RegisterPageObject registerPage;
+	private UserHomePageObject homePage;
+	private UserRegisterPageObject registerPage;
 	String projectPath = System.getProperty("user.dir");
 	WebDriverWait explicitWait;
 
@@ -37,7 +37,7 @@ public class Level_03_Register_Base_Object_Pattern_Part1 {
 		// 1. Mở URL ra thì nó sẽ mở ra trang Home Page (Business page)
 		driver.get("https://demo.nopcommerce.com/");
 
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		// Chuyển trang business thì khởi tạo page object class lên
 	}
 
@@ -50,7 +50,7 @@ public class Level_03_Register_Base_Object_Pattern_Part1 {
 		// clickToElement(driver, "//a[@class='ico-register']");
 
 		// khởi tạo Register page lên
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		registerPage.clickToRegisterButton();
 		// clickToElement(driver, "//button[@id='register-button']");
 
@@ -85,7 +85,7 @@ public class Level_03_Register_Base_Object_Pattern_Part1 {
 		// clickToElement(driver, "//a[@class='ico-register']");
 		// driver.findElement(By.cssSelector("a.ico-register")).click();
 		// khởi tạo lại Register page
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 
 		registerPage.sendkeyToFirstNameTextbox("Automation");
 		registerPage.sendkeyToLastNameTextbox("FC");
@@ -119,7 +119,7 @@ public class Level_03_Register_Base_Object_Pattern_Part1 {
 	public void TC_03_Register_Success() {
 		homePage.clickToRegisterLink();
 		// khởi tạo lại Register page
-		registerPage = new RegisterPageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		// clickToElement(driver, "//a[@class='ico-register']");
 		// driver.findElement(By.cssSelector("a.ico-register")).click();
 
@@ -153,7 +153,7 @@ public class Level_03_Register_Base_Object_Pattern_Part1 {
 		// clickToElement(driver, "//a[@class='ico-logout']");
 		// driver.findElement(By.cssSelector("a.ico-logout")).click();
 		// khởi tạo lại trang homePage
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 	}
 
 	@Test

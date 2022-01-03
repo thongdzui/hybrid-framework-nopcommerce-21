@@ -16,11 +16,12 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import pageObject.AddressesPageObject;
-import pageObject.CustomerInfoPageObject;
-import pageObject.OrderPageObject;
-import pageObject.PageGeneratorManager;
-import pageObject.RewardPointPageObject;
+import pageObject.admin.AdminLoginPageObject;
+import pageObject.users.UserAddressesPageObject;
+import pageObject.users.UserCustomerInfoPageObject;
+import pageObject.users.UserHomePageObject;
+import pageObject.users.UserOrderPageObject;
+import pageObject.users.UserRewardPointPageObject;
 import pageUIs.BasePageUI;
 
 public class BasePage {
@@ -367,32 +368,48 @@ public class BasePage {
 
 	// Từ 56 hàm ruốt ngắn còn 8 hàm mở 8 page
 	// demo 4 page có 4 hàm
-	public OrderPageObject clickToOrderLink(WebDriver driver) {
+	// User site
+	public UserOrderPageObject clickToOrderLink(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.ORDER_PAGE_LINK);
 		clickToElement(driver, BasePageUI.ORDER_PAGE_LINK);
 		// return new LoginPageObject(driver);
-		return PageGeneratorManager.getOrderPage(driver);
+		return PageGeneratorManager.getUserOrderPage(driver);
 	}
 
-	public AddressesPageObject clickToAddressesPage(WebDriver driver) {
+	public UserAddressesPageObject clickToAddressesPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.ADDRESSES_PAGE_LINK);
 		clickToElement(driver, BasePageUI.ADDRESSES_PAGE_LINK);
 		// return new LoginPageObject(driver);
-		return PageGeneratorManager.getAddressesPage(driver);
+		return PageGeneratorManager.getUserAddressesPage(driver);
 	}
 
-	public RewardPointPageObject clickToRewardPointLink(WebDriver driver) {
+	public UserRewardPointPageObject clickToRewardPointLink(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.REWARD_POINT_LINK);
 		clickToElement(driver, BasePageUI.REWARD_POINT_LINK);
 		// return new LoginPageObject(driver);
-		return PageGeneratorManager.getRewardPointPage(driver);
+		return PageGeneratorManager.getUserRewardPointPage(driver);
 	}
 
-	public CustomerInfoPageObject clickToCustomerInfoLink(WebDriver driver) {
+	public UserCustomerInfoPageObject clickToCustomerInfoLink(WebDriver driver) {
 		waitForElementClickable(driver, BasePageUI.CUTOMER_INFO_LINK);
 		clickToElement(driver, BasePageUI.CUTOMER_INFO_LINK);
 		// return new LoginPageObject(driver);
-		return PageGeneratorManager.getCustomerInfoPage(driver);
+		return PageGeneratorManager.getUserCustomerInfoPage(driver);
+	}
+
+	public UserHomePageObject clickToUserLogoutLink(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.USER_LOGOUT_LINK);
+		clickToElement(driver, BasePageUI.USER_LOGOUT_LINK);
+		return PageGeneratorManager.getUserHomePage(driver);
+
+	}
+
+	// admin site
+	public AdminLoginPageObject clickToAdminLogoutLink(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.ADMIN_LOGOUT_LINK);
+		clickToElement(driver, BasePageUI.ADMIN_LOGOUT_LINK);
+		return PageGeneratorManager.getAdminLoginPage(driver);
+
 	}
 
 	private long longTimeout = 30;

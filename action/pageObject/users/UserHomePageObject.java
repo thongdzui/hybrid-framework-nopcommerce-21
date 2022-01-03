@@ -1,11 +1,12 @@
-package pageObject;
+package pageObject.users;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import pageUIs.HomePageUI;
+import commons.PageGeneratorManager;
+import pageUIs.UserHomePageUI;
 
-public class HomePageObject extends BasePage {
+public class UserHomePageObject extends BasePage {
 	// chứa những action của page
 	// click vào button
 	// send keys vào text box
@@ -19,45 +20,45 @@ public class HomePageObject extends BasePage {
 	private WebDriver driver;
 	// private HomePageUI homePageUI = new HomePageUI();
 
-	public HomePageObject(WebDriver _driver) {
+	public UserHomePageObject(WebDriver _driver) {
 		driver = _driver;
 		System.out.println("Driver id của HomePageObject" + driver.toString());
 
 	}
 
-	public RegisterPageObject clickToRegisterLink() {
+	public UserRegisterPageObject clickToRegisterLink() {
 		// gán biến đó bằng static = truy cập trực tiếp từ class
 		// waitForElementClickable(driver, homePageUI.REGISTER_LINK);
 		// clickToElement(driver, homePageUI.REGISTER_LINK);
 
-		waitForElementClickable(driver, HomePageUI.REGISTER_LINK);
-		clickToElement(driver, HomePageUI.REGISTER_LINK);
+		waitForElementClickable(driver, UserHomePageUI.REGISTER_LINK);
+		clickToElement(driver, UserHomePageUI.REGISTER_LINK);
 		// return new RegisterPageObject(driver);
-		return PageGeneratorManager.getRegisterPage(driver);
+		return PageGeneratorManager.getUserRegisterPage(driver);
 
 		// System.out.println(HomePageUI.REGISTER_LINK);
 		// System.out.println(homePageUI.loginLink);
 
 	}
 
-	public LoginPageObject clickToLoginLink() {
-		waitForElementClickable(driver, HomePageUI.LOGIN_LINK);
-		clickToElement(driver, HomePageUI.LOGIN_LINK);
+	public UserLoginPageObject clickToLoginLink() {
+		waitForElementClickable(driver, UserHomePageUI.LOGIN_LINK);
+		clickToElement(driver, UserHomePageUI.LOGIN_LINK);
 		// return new LoginPageObject(driver);
-		return PageGeneratorManager.getLoginPage(driver);
+		return PageGeneratorManager.getUserLoginPage(driver);
 
 	}
 
 	public boolean isMyAccountLinkDisplay() {
-		waitForElementVisible(driver, HomePageUI.MY_ACCOUNT_LINK);
-		return isElementDisplayed(driver, HomePageUI.MY_ACCOUNT_LINK);
+		waitForElementVisible(driver, UserHomePageUI.MY_ACCOUNT_LINK);
+		return isElementDisplayed(driver, UserHomePageUI.MY_ACCOUNT_LINK);
 	}
 
-	public CustomerInfoPageObject clickToMyAccountLink() {
-		waitForElementClickable(driver, HomePageUI.MY_ACCOUNT_LINK);
-		clickToElement(driver, HomePageUI.MY_ACCOUNT_LINK);
+	public UserCustomerInfoPageObject clickToMyAccountLink() {
+		waitForElementClickable(driver, UserHomePageUI.MY_ACCOUNT_LINK);
+		clickToElement(driver, UserHomePageUI.MY_ACCOUNT_LINK);
 		// return new CustomerInfoPageObject(driver);
-		return PageGeneratorManager.getCustomerInfoPage(driver);
+		return PageGeneratorManager.getUserCustomerInfoPage(driver);
 
 	}
 
