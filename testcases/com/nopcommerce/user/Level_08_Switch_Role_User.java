@@ -14,6 +14,7 @@ import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageObject.admin.AdminDashboardPageObject;
 import pageObject.admin.AdminLoginPageObject;
+import pageObject.users.UserCustomerInfoPageObject;
 import pageObject.users.UserHomePageObject;
 import pageObject.users.UserLoginPageObject;
 
@@ -26,6 +27,7 @@ public class Level_08_Switch_Role_User extends BaseTest {
 	AdminLoginPageObject adminLoginPage;
 	UserLoginPageObject userLoginPage;
 	AdminDashboardPageObject adminDashboardPage;
+	UserCustomerInfoPageObject userCustomerPage;
 	String userEmailAddress, userPassword, adminEmailAddress, adminPassword;
 
 	WebDriverWait explicitWait;
@@ -34,7 +36,7 @@ public class Level_08_Switch_Role_User extends BaseTest {
 	@Parameters({ "browser" })
 	@BeforeClass
 	public void beforeClass(String browserName) {
-		userEmailAddress = "auto123@mail.net";
+		userEmailAddress = "kaka123@mail.net";
 		userPassword = "123456";
 		adminEmailAddress = "admin@yourstore.com";
 		adminPassword = "admin";
@@ -56,6 +58,12 @@ public class Level_08_Switch_Role_User extends BaseTest {
 
 		userHomePage = userLoginPage.loginAsUser(userEmailAddress, userPassword);
 
+		// Home =>My Account
+
+		userCustomerPage = userHomePage.clickToMyAccountLink();
+		// Customer Info =>Click Logout Link => Home
+		userHomePage = userCustomerPage.clickToUserLogoutLink(driver);
+
 		// từ 1 page bất kì của User mở ra trang Admin Login
 		userHomePage.openUrl(driver, GlobalConstants.ADMIN_URL);
 		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
@@ -70,12 +78,17 @@ public class Level_08_Switch_Role_User extends BaseTest {
 
 	@Test
 	public void Role_02_Switch_Admin_To_User() {
+		// Login/ Any Page (Admin) -> Mở ra User URl -> Home Page (User)
+		adminLoginPage.openUrl(driver, GlobalConstants.USER_URL);
+		userHomePage = PageGeneratorManager.getUserHomePage(driver);
+
+		// Home -> Register/ Login/ Checkout/ Shopping/.....
 
 	}
 
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		// driver.quit();
 	}
 
 	public int generateFakeNumber() {
