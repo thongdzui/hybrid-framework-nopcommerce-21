@@ -54,7 +54,7 @@ public class BaseTest {
 		 * projectPath + "/browserDriver/msedgedriver"); driver = new EdgeDriver(); }
 		 */
 
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIME_OUT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		// 1. Mở URL ra thì nó sẽ mở ra trang Home Page (Business page)
 		driver.get(urlValue);
