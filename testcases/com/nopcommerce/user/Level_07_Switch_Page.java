@@ -66,7 +66,7 @@ public class Level_07_Switch_Page extends BaseTest {
 
 		registerPage.clickToRegisterButton();
 
-		Assert.assertEquals(registerPage.getRegisteredSuccessMessage(), "Your registration completed");
+		// Assert.assertEquals(registerPage.getRegisteredSuccessMessage(), "Your registration completed");
 
 		// 3)Từ Register chuyển về Home page khởi tạo lại trang Home Page
 		homePage = registerPage.clickToLogoutLink();

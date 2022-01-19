@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NopCommerce" parallel="false">
+
+  <parameter name="url" value="https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/" />
+
+
+    
+    <test name="Run on CHROME">
+  	<parameter name="browser" value="edge" />
+    	<classes>
+      		<class name="com.jquery.datatable.Level_10_DataTable_DataGrid"/>    
+    	</classes>
+    </test>  
+    
+ 
+  
+</suite> <!-- Suite -->
