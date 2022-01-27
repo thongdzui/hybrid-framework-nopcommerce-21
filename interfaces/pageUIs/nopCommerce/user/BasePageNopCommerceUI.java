@@ -1,6 +1,6 @@
-package pageUIs;
+package pageUIs.nopCommerce.user;
 
-public class BasePageUI {
+public class BasePageNopCommerceUI {
 	// 7 locator đại diện cho 7 page
 	public static final String ORDER_PAGE_LINK = "xpath=//div[@class='side-2']//a[text()='Orders']";
 

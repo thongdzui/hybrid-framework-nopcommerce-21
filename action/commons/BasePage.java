@@ -22,7 +22,8 @@ import pageObject.users.UserCustomerInfoPageObject;
 import pageObject.users.UserHomePageObject;
 import pageObject.users.UserOrderPageObject;
 import pageObject.users.UserRewardPointPageObject;
-import pageUIs.BasePageUI;
+import pageUIs.jQuery.uploadFile.BasePageJQueryUI;
+import pageUIs.nopCommerce.user.BasePageNopCommerceUI;
 
 public class BasePage {
 	public static BasePage getBasePage() {
@@ -436,47 +437,60 @@ public class BasePage {
 		new WebDriverWait(driver, longTimeout).until(ExpectedConditions.invisibilityOfAllElements(getWebElements(driver, getDynamicXpath(locatorType, dynamicValues))));
 	}
 
+	// ham Upload file
+	public void uploadMultipleFiles(WebDriver driver, String... fileNames) {
+		String filePath = GlobalConstants.UPLOAD_FILE_FOLDER;
+		String fullFileName = "";
+		for (String file : fileNames) {
+			fullFileName = fullFileName + filePath + file + "\n";
+
+		}
+		fullFileName = fullFileName.trim();
+		getWebElement(driver, BasePageJQueryUI.UPLOAD_FILE).sendKeys(fullFileName);
+
+	}
+
 	// Từ 56 hàm ruốt ngắn còn 8 hàm mở 8 page
 	// demo 4 page có 4 hàm
 	// User site
 	public UserOrderPageObject clickToOrderLink(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.ORDER_PAGE_LINK);
-		clickToElement(driver, BasePageUI.ORDER_PAGE_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.ORDER_PAGE_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.ORDER_PAGE_LINK);
 		// return new LoginPageObject(driver);
 		return PageGeneratorManager.getUserOrderPage(driver);
 	}
 
 	public UserAddressesPageObject clickToAddressesPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.ADDRESSES_PAGE_LINK);
-		clickToElement(driver, BasePageUI.ADDRESSES_PAGE_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.ADDRESSES_PAGE_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.ADDRESSES_PAGE_LINK);
 		// return new LoginPageObject(driver);
 		return PageGeneratorManager.getUserAddressesPage(driver);
 	}
 
 	public UserRewardPointPageObject clickToRewardPointLink(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.REWARD_POINT_LINK);
-		clickToElement(driver, BasePageUI.REWARD_POINT_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.REWARD_POINT_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.REWARD_POINT_LINK);
 		// return new LoginPageObject(driver);
 		return PageGeneratorManager.getUserRewardPointPage(driver);
 	}
 
 	public UserCustomerInfoPageObject clickToCustomerInfoLink(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.CUTOMER_INFO_LINK);
-		clickToElement(driver, BasePageUI.CUTOMER_INFO_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.CUTOMER_INFO_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.CUTOMER_INFO_LINK);
 		// return new LoginPageObject(driver);
 		return PageGeneratorManager.getUserCustomerInfoPage(driver);
 	}
 
 	public UserHomePageObject clickToUserLogoutLink(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.USER_LOGOUT_LINK);
-		clickToElement(driver, BasePageUI.USER_LOGOUT_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.USER_LOGOUT_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.USER_LOGOUT_LINK);
 		return PageGeneratorManager.getUserHomePage(driver);
 
 	}
 
 	public BasePage openPagesAtMyAccountByName(WebDriver driver, String pageName) {
-		waitForElementClickable(driver, BasePageUI.DYNAMIC_PAGE_MY_ACCOUNT_AREA, pageName);
-		clickToElement(driver, BasePageUI.DYNAMIC_PAGE_MY_ACCOUNT_AREA, pageName);
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_PAGE_MY_ACCOUNT_AREA, pageName);
+		clickToElement(driver, BasePageNopCommerceUI.DYNAMIC_PAGE_MY_ACCOUNT_AREA, pageName);
 		switch (pageName) {
 		case "Customer info":
 			PageGeneratorManager.getUserCustomerInfoPage(driver);
@@ -493,8 +507,8 @@ public class BasePage {
 
 	// admin site
 	public AdminLoginPageObject clickToAdminLogoutLink(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.ADMIN_LOGOUT_LINK);
-		clickToElement(driver, BasePageUI.ADMIN_LOGOUT_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.ADMIN_LOGOUT_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.ADMIN_LOGOUT_LINK);
 		return PageGeneratorManager.getAdminLoginPage(driver);
 
 	}

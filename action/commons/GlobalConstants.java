@@ -15,7 +15,7 @@ public class GlobalConstants {
 	public static final String PROJECT_PATH = System.getProperty("user.dir");
 
 	// win/mac /linux
-	public static final String UPLOAD_FILE_FOLDER = PROJECT_PATH + File.separator + "uploadFiles";
+	public static final String UPLOAD_FILE_FOLDER = PROJECT_PATH + File.separator + "uploadFiles" + File.separator;
 
 	// tại sao cần thư mục download files
 	public static final String DOWNLOAD_FILE = PROJECT_PATH + File.separator + "downloadFiles";

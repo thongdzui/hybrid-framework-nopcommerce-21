@@ -1,4 +1,4 @@
-package pageUIs;
+package pageUIs.nopCommerce.user;
 
 public class UserRegisterPageUI {
 	public static final String REGISTER_BUTTON = "xpath=//button[@id='register-button']";
