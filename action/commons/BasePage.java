@@ -1,7 +1,9 @@
 package commons;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -299,6 +301,34 @@ public class BasePage {
 			return false;
 		}
 
+	}
+
+	public void overrideGlobalTimeout(WebDriver driver, int timeOut) {
+		driver.manage().timeouts().implicitlyWait(timeOut, TimeUnit.SECONDS);
+
+	}
+
+	public boolean isElementUndisplayed(WebDriver driver, String locator) {
+
+		System.out.println("Start time =" + new Date().toString());
+		overrideGlobalTimeout(driver, 5);
+		List<WebElement> elements = getWebElements(driver, locator);
+		// nếu như mình gán = 5 apply cho tất cả các step về sau đó: findElement/ findElements
+		overrideGlobalTimeout(driver, 30);
+		if (elements.size() == 0) {
+			System.out.println("Case 3 - Element not in DOM");
+			System.out.println("End time =" + new Date().toString());
+			return true;
+			// nó có kích thước = 1 (có trong DOM)
+			// ko dc hiển thị
+		} else if (elements.size() > 0 && !elements.get(0).isDisplayed()) {
+			System.out.println("Case 2 - Element in DOM and not displayed");
+			System.out.println("End time =" + new Date().toString());
+			return true;
+		} else {
+			System.out.println("Case 1 - Element in DOM and visible");
+			return false;
+		}
 	}
 
 	public boolean isElementunDisplayed(WebDriver driver, String locatorType) {

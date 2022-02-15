@@ -46,4 +46,9 @@ public class LoginPageObject extends BasePage {
 
 	}
 
+	public boolean isConfirmEmailAddressTextboxUnDisplayed() {
+		// TODO Auto-generated method stub
+		return isElementUndisplayed(driver, LoginPageUI.CONFIRM_EMAIL_ADDRESS_TEXTBOX);
+	}
+
 }

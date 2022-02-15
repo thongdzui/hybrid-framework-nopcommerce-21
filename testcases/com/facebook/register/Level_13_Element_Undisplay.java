@@ -47,7 +47,10 @@ public class Level_13_Element_Undisplay extends BaseTest {
 		loginPage.enterToEmailAddressTextbox("");
 		loginPage.sleepInSecond(3);
 		// verify False - cho ham tra ve la displayed
-		verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
+		// verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
+
+		// Cách 2
+		verifyTrue(loginPage.isConfirmEmailAddressTextboxUnDisplayed());
 
 	}
 
@@ -59,7 +62,10 @@ public class Level_13_Element_Undisplay extends BaseTest {
 		// nen ham find element se bi failed
 		loginPage.sleepInSecond(3);
 
-		verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
+		// verifyFalse(loginPage.isConfirmEmailAddressTextboxDisplayed());
+
+		// Cách 2
+		verifyTrue(loginPage.isConfirmEmailAddressTextboxUnDisplayed());
 
 	}
 
