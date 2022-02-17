@@ -1,0 +1,58 @@
+[INFO ] [2022-02-17 22:34:44,354] Register - Step 01: Navigate to Register page
+[INFO ] [2022-02-17 22:34:45,017] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-02-17 22:34:45,161] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-02-17 22:34:45,255] Register - Step 04: Enter to emailAddress textbox with value isafc2645@mail.net
+[INFO ] [2022-02-17 22:34:45,349] Register - Step 05: Enter to password textbox with value is123456
+[INFO ] [2022-02-17 22:34:45,446] Register - Step 06: Enter to password textbox with value is123456
+[INFO ] [2022-02-17 22:34:45,539] Register - Step 07: Click to Register button
+[INFO ] [2022-02-17 22:34:46,588] Register - Step 08: Verify Register Success message display
+[INFO ] [2022-02-17 22:34:46,588] Register - Step 09: Click to logout link 
+[INFO ] [2022-02-17 22:34:47,508] Login - Step 01: Navigate to Login page
+[INFO ] [2022-02-17 22:34:48,131] Login - Step 02: Enter to emailAddress textbox with value is afc2645@mail.net
+[INFO ] [2022-02-17 22:34:48,219] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-02-17 22:34:48,307] Login - Step 04: Click to Login button
+[INFO ] [2022-02-17 22:34:49,250] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-02-17 22:35:42,545] Register - Step 01: Navigate to Register page
+[INFO ] [2022-02-17 22:35:43,191] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-02-17 22:35:43,362] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-02-17 22:35:43,452] Register - Step 04: Enter to emailAddress textbox with value isafc3836@mail.net
+[INFO ] [2022-02-17 22:35:43,551] Register - Step 05: Enter to password textbox with value is123456
+[INFO ] [2022-02-17 22:35:43,645] Register - Step 06: Enter to password textbox with value is123456
+[INFO ] [2022-02-17 22:35:43,734] Register - Step 07: Click to Register button
+[INFO ] [2022-02-17 22:35:44,708] Register - Step 08: Verify Register Success message display
+[INFO ] [2022-02-17 22:35:44,708] Register - Step 09: Click to logout link 
+[INFO ] [2022-02-17 22:35:45,700] Login - Step 01: Navigate to Login page
+[INFO ] [2022-02-17 22:35:46,431] Login - Step 02: Enter to emailAddress textbox with value is afc3836@mail.net
+[INFO ] [2022-02-17 22:35:46,521] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-02-17 22:35:46,607] Login - Step 04: Click to Login button
+[INFO ] [2022-02-17 22:35:47,862] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-02-17 22:53:28,266] Register - Step 01: Navigate to Register page
+[INFO ] [2022-02-17 22:53:28,942] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-02-17 22:53:29,083] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-02-17 22:53:29,206] Register - Step 04: Enter to emailAddress textbox with value isafc1353@mail.net
+[INFO ] [2022-02-17 22:53:29,301] Register - Step 05: Enter to password textbox with value is123456
+[INFO ] [2022-02-17 22:53:29,393] Register - Step 06: Enter to password textbox with value is123456
+[INFO ] [2022-02-17 22:53:29,482] Register - Step 07: Click to Register button
+[INFO ] [2022-02-17 22:53:30,514] Register - Step 08: Verify Register Success message display
+[INFO ] [2022-02-17 22:53:30,514] Register - Step 09: Click to logout link 
+[INFO ] [2022-02-17 22:53:31,389] Login - Step 01: Navigate to Login page
+[INFO ] [2022-02-17 22:53:32,020] Login - Step 02: Enter to emailAddress textbox with value is afc1353@mail.net
+[INFO ] [2022-02-17 22:53:32,109] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-02-17 22:53:32,193] Login - Step 04: Click to Login button
+[INFO ] [2022-02-17 22:53:33,153] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-02-17 22:53:33,195]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-02-17 23:09:15,358] Register - Step 01: Navigate to Register page
+[INFO ] [2022-02-17 23:09:16,025] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-02-17 23:09:16,166] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-02-17 23:09:16,256] Register - Step 04: Enter to emailAddress textbox with value isafc2903@mail.net
+[INFO ] [2022-02-17 23:09:16,357] Register - Step 05: Enter to password textbox with value is123456
+[INFO ] [2022-02-17 23:09:16,456] Register - Step 06: Enter to password textbox with value is123456
+[INFO ] [2022-02-17 23:09:16,545] Register - Step 07: Click to Register button
+[INFO ] [2022-02-17 23:09:17,695] Register - Step 08: Verify Register Success message display
+[INFO ] [2022-02-17 23:09:17,695] Register - Step 09: Click to logout link 
+[INFO ] [2022-02-17 23:09:18,668] Login - Step 01: Navigate to Login page
+[INFO ] [2022-02-17 23:09:19,371] Login - Step 02: Enter to emailAddress textbox with value is afc2903@mail.net
+[INFO ] [2022-02-17 23:09:19,460] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-02-17 23:09:19,545] Login - Step 04: Click to Login button
+[INFO ] [2022-02-17 23:09:20,523] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-02-17 23:09:20,564]  -------------------------- PASSED -------------------------- 
