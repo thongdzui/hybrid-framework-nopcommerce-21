@@ -22,6 +22,10 @@ public class BaseTest {
 		log = LogFactory.getLog(getClass());
 	}
 
+	public WebDriver getDriverInstance() {
+		return this.driver;
+	}
+
 	public WebDriver getBrowserDriver(String browserName, String urlValue) {
 		// dùng Web Driver Manager
 		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
