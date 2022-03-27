@@ -113,3 +113,10 @@
 [INFO ] [2022-03-01 15:48:33,571] Register - Step 07: Click to Register button
 [INFO ] [2022-03-01 15:48:34,478] Register - Step 08: Verify Register Success message display
 [INFO ] [2022-03-01 15:48:34,542] Login - Step 01: Navigate to Login page
+[INFO ] [2022-03-27 17:08:35,785] Login - Step 01: Navigate to Login page
+[INFO ] [2022-03-27 17:08:37,129] Login - Step 02: Enter to emailAddress textbox with value is afc3476@mail.net
+[INFO ] [2022-03-27 17:08:37,288] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-03-27 17:08:37,404] Login - Step 04: Click to Login button
+[INFO ] [2022-03-27 18:47:41,086] Pre-condition - Step 1: Navigate to Login page
+[INFO ] [2022-03-27 18:47:41,669] Pre-condition - Step 2: Set cookie and reload page 
+[INFO ] [2022-03-27 18:47:44,714] Pre-condition - Step 3: Enter to password textbox with value isnull
