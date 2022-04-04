@@ -564,6 +564,55 @@ public class BasePage {
 		}
 	}
 
+	// Pattern Object
+	/**
+	 * Enter to dynamic Textbox by ID
+	 * 
+	 * @param driver
+	 * @param textboxID
+	 * @param value
+	 * @author tminht
+	 */
+	public void inputToTextboxByID(WebDriver driver, String textboxID, String value) {
+		// TODO Auto-generated method stub
+		waitForElementVisible(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
+		sendkeyToElement(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, value, textboxID);
+
+	}
+
+	/**
+	 * @param driver
+	 * @param buttonText
+	 */
+	public void clickToButtonByText(WebDriver driver, String buttonText) {
+		// TODO Auto-generated method stub
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+		clickToElement(driver, BasePageNopCommerceUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+
+	}
+
+	/**
+	 * Select Items in Dropdown by Name Attribute
+	 * 
+	 * @param driver
+	 * @param dropdownAttributeName
+	 * @param itemValue
+	 */
+	public void selectToDropDownByName(WebDriver driver, String dropdownAttributeName, String itemValue) {
+		// TODO Auto-generated method stub
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_DROP_DOWN_BY_NAME, dropdownAttributeName);
+		selectItemInDefaultDropDown(driver, BasePageNopCommerceUI.DYNAMIC_DROP_DOWN_BY_NAME, itemValue, dropdownAttributeName);
+
+	}
+
+	/*
+	 * public void clickToRadioButtonByLabel(WebDriver driver, String checkboxLabelName) { // TODO Auto-generated method stub waitForElementClickable(driver,
+	 * BasePageNopCommerceUI.DYNAMIC_RADIO_BUTTON_BY_CHECK_BOX, checkboxLabelName); checkToRadioOrCheckbox(driver,
+	 * BasePageNopCommerceUI.DYNAMIC_RADIO_BUTTON_BY_CHECK_BOX, checkboxLabelName);
+	 * 
+	 * }
+	 */
+
 	// admin site
 	public AdminLoginPageObject clickToAdminLogoutLink(WebDriver driver) {
 		waitForElementClickable(driver, BasePageNopCommerceUI.ADMIN_LOGOUT_LINK);

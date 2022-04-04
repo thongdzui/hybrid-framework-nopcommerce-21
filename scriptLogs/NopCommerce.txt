@@ -1,10 +1,16 @@
-[INFO ] [2022-03-30 14:06:30,205] Register - Step 01: Navigate to Register page
-[INFO ] [2022-03-30 14:06:30,832] Register - Step 02: Enter to Firstname textbox with value isAutomation
-[INFO ] [2022-03-30 14:06:30,976] Register - Step 03: Enter to lastName textbox with value isFC
-[INFO ] [2022-03-30 14:06:31,069] Register - Step 04: Enter to emailAddress textbox with value isafc3194@mail.net
-[INFO ] [2022-03-30 14:06:31,175] Register - Step 05: Enter to password textbox with value is123456
-[INFO ] [2022-03-30 14:06:31,275] Register - Step 06: Enter to password textbox with value is123456
-[INFO ] [2022-03-30 14:06:31,366] Register - Step 07: Click to Register button
-[INFO ] [2022-03-30 14:06:32,344] Register - Step 08: Verify Register Success message display
-[INFO ] [2022-03-30 14:06:32,514] OS name = mac os x
-[INFO ] [2022-03-30 14:06:32,514] Driver instance name = edgedriver: msedge on mac (036d96819d8c0ed93bc53baaf8088127)
+[INFO ] [2022-04-04 18:23:10,880] Register - Step 01: Navigate to Register page
+[INFO ] [2022-04-04 18:23:11,479] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-04-04 18:23:11,618] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-04-04 18:23:11,970] Register - Step 04: Enter to emailAddress textbox with value isafc9934@mail.net
+[INFO ] [2022-04-04 18:23:12,063] Register - Step 05: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 18:23:12,153] Register - Step 06: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 18:23:12,245] Register - Step 07: Click to Register button
+[INFO ] [2022-04-04 18:23:13,174] Register - Step 08: Verify Register Success message display
+[INFO ] [2022-04-04 18:23:13,175] Register - Step 09: Click to logout link 
+[INFO ] [2022-04-04 18:23:14,027] Login - Step 01: Navigate to Login page
+[INFO ] [2022-04-04 18:23:14,558] Login - Step 02: Enter to emailAddress textbox with value is afc9934@mail.net
+[INFO ] [2022-04-04 18:23:14,647] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 18:23:14,730] Login - Step 04: Click to Login button
+[INFO ] [2022-04-04 18:23:15,532] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-04-04 18:23:15,575] OS name = mac os x
+[INFO ] [2022-04-04 18:23:15,576] Driver instance name = edgedriver: msedge on mac (c9320c512cb405379f897680850ab379)

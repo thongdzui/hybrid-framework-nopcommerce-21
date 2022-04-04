@@ -176,3 +176,209 @@
 [INFO ] [2022-03-30 14:06:32,344] Register - Step 08: Verify Register Success message display
 [INFO ] [2022-03-30 14:06:32,514] OS name = mac os x
 [INFO ] [2022-03-30 14:06:32,514] Driver instance name = edgedriver: msedge on mac (036d96819d8c0ed93bc53baaf8088127)
+[INFO ] [2022-03-31 12:51:25,784] Register - Step 01: Navigate to Register page
+[INFO ] [2022-03-31 12:51:26,427] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-03-31 12:51:56,773] Login - Step 01: Navigate to Login page
+[INFO ] [2022-03-31 12:51:57,453] Login - Step 02: Enter to emailAddress textbox with value is afc7519@mail.net
+[INFO ] [2022-03-31 12:51:57,592] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-03-31 12:51:57,688] Login - Step 04: Click to Login button
+[INFO ] [2022-03-31 12:51:58,152] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-03-31 12:52:28,419] OS name = mac os x
+[INFO ] [2022-03-31 12:52:28,420] Driver instance name = edgedriver: msedge on mac (f3fd2d35753418a0ad9497fd4e4144a0)
+[INFO ] [2022-03-31 12:52:28,423] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=96.0.1054.53)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LVNHCMAC0000092', ip: 'fe80:0:0:0:c05:1a4:747e:b343%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.53, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:49508}, msedge: {msedgedriverVersion: 96.0.1054.62 (f97cb2ce0103f..., userDataDir: /var/folders/m7/540c8sd94fb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f3fd2d35753418a0ad9497fd4e4144a0
+[INFO ] [2022-03-31 12:53:41,407] Register - Step 01: Navigate to Register page
+[INFO ] [2022-03-31 12:53:42,058] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-03-31 12:54:12,341] Login - Step 01: Navigate to Login page
+[INFO ] [2022-03-31 12:54:42,772] OS name = mac os x
+[INFO ] [2022-03-31 12:54:42,772] Driver instance name = edgedriver: msedge on mac (f8654b8717461e8c554f115d8d3760fb)
+[INFO ] [2022-03-31 12:54:42,775] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=96.0.1054.53)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LVNHCMAC0000092', ip: 'fe80:0:0:0:c05:1a4:747e:b343%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.53, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:49565}, msedge: {msedgedriverVersion: 96.0.1054.62 (f97cb2ce0103f..., userDataDir: /var/folders/m7/540c8sd94fb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f8654b8717461e8c554f115d8d3760fb
+[INFO ] [2022-03-31 13:01:18,505] Register - Step 01: Navigate to Register page
+[INFO ] [2022-03-31 13:01:19,138] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-03-31 13:01:49,270] Login - Step 01: Navigate to Login page
+[INFO ] [2022-03-31 13:01:49,858] Login - Step 02: Enter to emailAddress textbox with value is afc368@mail.net
+[INFO ] [2022-03-31 13:01:49,982] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-03-31 13:01:50,078] Login - Step 04: Click to Login button
+[INFO ] [2022-03-31 13:01:50,517] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-03-31 13:02:20,580] OS name = mac os x
+[INFO ] [2022-03-31 13:02:20,580] Driver instance name = edgedriver: msedge on mac (beb06e39729a83e3385060c11ed10f04)
+[INFO ] [2022-03-31 13:06:07,396] Login - Step 01: Navigate to Login page
+[INFO ] [2022-03-31 13:06:08,088] Login - Step 02: Enter to emailAddress textbox with value is afc9550@mail.net
+[INFO ] [2022-03-31 13:06:08,226] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-03-31 13:06:08,322] Login - Step 04: Click to Login button
+[INFO ] [2022-03-31 13:06:08,805] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-03-31 13:06:39,123] OS name = mac os x
+[INFO ] [2022-03-31 13:06:39,123] Driver instance name = edgedriver: msedge on mac (43472e03ab3646e135a0660b25683cd8)
+[INFO ] [2022-03-31 13:06:39,126] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=96.0.1054.53)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LVNHCMAC0000092', ip: 'fe80:0:0:0:c05:1a4:747e:b343%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.53, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:49726}, msedge: {msedgedriverVersion: 96.0.1054.62 (f97cb2ce0103f..., userDataDir: /var/folders/m7/540c8sd94fb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 43472e03ab3646e135a0660b25683cd8
+[INFO ] [2022-03-31 13:08:25,713] Register - Step 01: Navigate to Register page
+[INFO ] [2022-03-31 13:08:26,329] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-03-31 13:08:26,469] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-03-31 13:08:26,563] Register - Step 04: Enter to emailAddress textbox with value isafc6623@mail.net
+[INFO ] [2022-03-31 13:08:26,663] Register - Step 05: Enter to password textbox with value is123456
+[INFO ] [2022-03-31 13:08:26,762] Register - Step 06: Enter to password textbox with value is123456
+[INFO ] [2022-03-31 13:08:26,857] Register - Step 07: Click to Register button
+[INFO ] [2022-03-31 13:08:27,825] Register - Step 08: Verify Register Success message display
+[INFO ] [2022-03-31 13:08:27,935] Login - Step 01: Navigate to Login page
+[INFO ] [2022-03-31 13:08:57,954] OS name = mac os x
+[INFO ] [2022-03-31 13:08:57,955] Driver instance name = edgedriver: msedge on mac (8114f3c532510cadd1b56747cc0cc51e)
+[INFO ] [2022-03-31 13:10:52,719] Register - Step 01: Navigate to Register page
+[INFO ] [2022-03-31 13:10:53,384] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-03-31 13:10:53,520] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-03-31 13:10:53,616] Register - Step 04: Enter to emailAddress textbox with value isafc4963@mail.net
+[INFO ] [2022-03-31 13:10:53,718] Register - Step 05: Enter to password textbox with value is123456
+[INFO ] [2022-03-31 13:10:53,819] Register - Step 06: Enter to password textbox with value is123456
+[INFO ] [2022-03-31 13:10:53,916] Register - Step 07: Click to Register button
+[INFO ] [2022-03-31 13:10:54,825] Register - Step 08: Verify Register Success message display
+[INFO ] [2022-03-31 13:10:54,949] Login - Step 01: Navigate to Login page
+[INFO ] [2022-03-31 13:11:25,007] OS name = mac os x
+[INFO ] [2022-03-31 13:11:25,007] Driver instance name = edgedriver: msedge on mac (902d247011b21eefc1a518d1d5d02633)
+[INFO ] [2022-03-31 13:17:47,970] Register - Step 01: Navigate to Register page
+[INFO ] [2022-03-31 13:17:48,627] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-03-31 13:17:48,794] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-03-31 13:17:48,896] Register - Step 04: Enter to emailAddress textbox with value isafc9240@mail.net
+[INFO ] [2022-03-31 13:17:49,012] Register - Step 05: Enter to password textbox with value is123456
+[INFO ] [2022-03-31 13:17:49,144] Register - Step 06: Enter to password textbox with value is123456
+[INFO ] [2022-03-31 13:17:49,259] Register - Step 07: Click to Register button
+[INFO ] [2022-03-31 13:17:50,206] Register - Step 08: Verify Register Success message display
+[INFO ] [2022-03-31 13:17:50,207] Register - Step 09: Click to logout link 
+[INFO ] [2022-03-31 13:17:51,126] Login - Step 01: Navigate to Login page
+[INFO ] [2022-03-31 13:17:51,699] Login - Step 02: Enter to emailAddress textbox with value is afc9240@mail.net
+[INFO ] [2022-03-31 13:17:51,792] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-03-31 13:17:51,880] Login - Step 04: Click to Login button
+[INFO ] [2022-03-31 13:17:52,740] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-03-31 13:17:52,819] OS name = mac os x
+[INFO ] [2022-03-31 13:17:52,819] Driver instance name = edgedriver: msedge on mac (8b629abd628a836a04050f95b6d057de)
+[INFO ] [2022-04-04 17:10:18,871] Register - Step 01: Navigate to Register page
+[INFO ] [2022-04-04 17:10:46,497] Register - Step 01: Navigate to Register page
+[INFO ] [2022-04-04 17:10:48,116] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-04-04 17:10:48,266] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-04-04 17:10:48,361] Register - Step 04: Enter to emailAddress textbox with value isafc1361@mail.net
+[INFO ] [2022-04-04 17:10:48,459] Register - Step 05: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 17:10:48,554] Register - Step 06: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 17:10:48,643] Register - Step 07: Click to Register button
+[INFO ] [2022-04-04 17:10:49,350] Login - Step 01: Navigate to Login page
+[INFO ] [2022-04-04 17:10:50,536] Register - Step 08: Verify Register Success message display
+[INFO ] [2022-04-04 17:10:50,536] Register - Step 09: Click to logout link 
+[INFO ] [2022-04-04 17:10:51,344] Login - Step 01: Navigate to Login page
+[INFO ] [2022-04-04 17:10:52,914] Login - Step 02: Enter to emailAddress textbox with value is afc1361@mail.net
+[INFO ] [2022-04-04 17:10:52,999] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 17:10:53,086] Login - Step 04: Click to Login button
+[INFO ] [2022-04-04 17:10:53,832] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-04-04 17:10:53,883] OS name = mac os x
+[INFO ] [2022-04-04 17:10:53,883] Driver instance name = edgedriver: msedge on mac (224f3b437b2a2013a573c87f32b35287)
+[INFO ] [2022-04-04 17:10:54,430] OS name = mac os x
+[INFO ] [2022-04-04 17:10:54,430] Driver instance name = edgedriver: msedge on mac (d767d7403e4e2b830f4e52d308352724)
+[INFO ] [2022-04-04 17:10:54,432] java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:11425
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LVNHCMAC0000092', ip: 'fe80:0:0:0:1cb1:ff3c:e333:402e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_121'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-04-04 18:12:29,600] Register - Step 01: Navigate to Register page
+[INFO ] [2022-04-04 18:12:30,220] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-04-04 18:12:30,359] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-04-04 18:13:00,938] Login - Step 01: Navigate to Login page
+[INFO ] [2022-04-04 18:13:01,535] Login - Step 02: Enter to emailAddress textbox with value is afc3638@mail.net
+[INFO ] [2022-04-04 18:13:01,626] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 18:13:01,718] Login - Step 04: Click to Login button
+[INFO ] [2022-04-04 18:13:02,170] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-04-04 18:13:32,455] OS name = mac os x
+[INFO ] [2022-04-04 18:13:32,456] Driver instance name = edgedriver: msedge on mac (8acb6bcda7c19747d628f5931a991985)
+[INFO ] [2022-04-04 18:13:32,459] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=96.0.1054.53)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LVNHCMAC0000092', ip: 'fe80:0:0:0:18c9:7b57:3be7:2ea4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.53, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:49519}, msedge: {msedgedriverVersion: 96.0.1054.62 (f97cb2ce0103f..., userDataDir: /var/folders/m7/540c8sd94fb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8acb6bcda7c19747d628f5931a991985
+[INFO ] [2022-04-04 18:14:09,611] Register - Step 01: Navigate to Register page
+[INFO ] [2022-04-04 18:14:10,332] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-04-04 18:14:10,464] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-04-04 18:14:40,858] Login - Step 01: Navigate to Login page
+[INFO ] [2022-04-04 18:15:11,296] OS name = mac os x
+[INFO ] [2022-04-04 18:15:11,296] Driver instance name = edgedriver: msedge on mac (83322630ae88db3a908d1a4b36f4b784)
+[INFO ] [2022-04-04 18:15:11,299] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=96.0.1054.53)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LVNHCMAC0000092', ip: 'fe80:0:0:0:18c9:7b57:3be7:2ea4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.53, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:49591}, msedge: {msedgedriverVersion: 96.0.1054.62 (f97cb2ce0103f..., userDataDir: /var/folders/m7/540c8sd94fb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 83322630ae88db3a908d1a4b36f4b784
+[INFO ] [2022-04-04 18:15:41,516] OS name = mac os x
+[INFO ] [2022-04-04 18:15:41,517] 
+[INFO ] [2022-04-04 18:16:17,467] Register - Step 01: Navigate to Register page
+[INFO ] [2022-04-04 18:16:18,058] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-04-04 18:16:18,191] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-04-04 18:16:18,284] Register - Step 04: Enter to emailAddress textbox with value isafc3211@mail.net
+[INFO ] [2022-04-04 18:16:18,377] Register - Step 05: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 18:16:18,472] Register - Step 06: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 18:16:18,564] Register - Step 07: Click to Register button
+[INFO ] [2022-04-04 18:16:19,579] Register - Step 08: Verify Register Success message display
+[INFO ] [2022-04-04 18:16:19,579] Register - Step 09: Click to logout link 
+[INFO ] [2022-04-04 18:16:20,487] Login - Step 01: Navigate to Login page
+[INFO ] [2022-04-04 18:16:21,026] Login - Step 02: Enter to emailAddress textbox with value is afc3211@mail.net
+[INFO ] [2022-04-04 18:16:21,110] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 18:16:21,200] Login - Step 04: Click to Login button
+[INFO ] [2022-04-04 18:16:21,990] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-04-04 18:16:22,048] OS name = mac os x
+[INFO ] [2022-04-04 18:16:22,048] Driver instance name = edgedriver: msedge on mac (74d1798e4e2217b76656c9c673c73860)
+[INFO ] [2022-04-04 18:17:23,627] Register - Step 01: Navigate to Register page
+[INFO ] [2022-04-04 18:17:24,270] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-04-04 18:17:24,401] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-04-04 18:17:54,595] Login - Step 01: Navigate to Login page
+[INFO ] [2022-04-04 18:17:55,146] Login - Step 02: Enter to emailAddress textbox with value is afc2963@mail.net
+[INFO ] [2022-04-04 18:17:55,236] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 18:17:55,331] Login - Step 04: Click to Login button
+[INFO ] [2022-04-04 18:17:55,765] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-04-04 18:18:25,795] OS name = mac os x
+[INFO ] [2022-04-04 18:18:25,795] Driver instance name = edgedriver: msedge on mac (d6e31fe02faa78e99a3fd93230d14204)
+[INFO ] [2022-04-04 18:21:34,443] Register - Step 01: Navigate to Register page
+[INFO ] [2022-04-04 18:21:36,092] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-04-04 18:21:36,240] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-04-04 18:22:06,644] Login - Step 01: Navigate to Login page
+[INFO ] [2022-04-04 18:22:37,104] OS name = mac os x
+[INFO ] [2022-04-04 18:22:37,105] Driver instance name = edgedriver: msedge on mac (fb41e0490b5fefb90c513e1c290ca286)
+[INFO ] [2022-04-04 18:22:37,107] no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=96.0.1054.53)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LVNHCMAC0000092', ip: 'fe80:0:0:0:18c9:7b57:3be7:2ea4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.53, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:49792}, msedge: {msedgedriverVersion: 96.0.1054.62 (f97cb2ce0103f..., userDataDir: /var/folders/m7/540c8sd94fb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fb41e0490b5fefb90c513e1c290ca286
+[INFO ] [2022-04-04 18:23:10,880] Register - Step 01: Navigate to Register page
+[INFO ] [2022-04-04 18:23:11,479] Register - Step 02: Enter to Firstname textbox with value isAutomation
+[INFO ] [2022-04-04 18:23:11,618] Register - Step 03: Enter to lastName textbox with value isFC
+[INFO ] [2022-04-04 18:23:11,970] Register - Step 04: Enter to emailAddress textbox with value isafc9934@mail.net
+[INFO ] [2022-04-04 18:23:12,063] Register - Step 05: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 18:23:12,153] Register - Step 06: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 18:23:12,245] Register - Step 07: Click to Register button
+[INFO ] [2022-04-04 18:23:13,174] Register - Step 08: Verify Register Success message display
+[INFO ] [2022-04-04 18:23:13,175] Register - Step 09: Click to logout link 
+[INFO ] [2022-04-04 18:23:14,027] Login - Step 01: Navigate to Login page
+[INFO ] [2022-04-04 18:23:14,558] Login - Step 02: Enter to emailAddress textbox with value is afc9934@mail.net
+[INFO ] [2022-04-04 18:23:14,647] Login - Step 03: Enter to password textbox with value is123456
+[INFO ] [2022-04-04 18:23:14,730] Login - Step 04: Click to Login button
+[INFO ] [2022-04-04 18:23:15,532] Login - Step 05: Verify My Account Link is display
+[INFO ] [2022-04-04 18:23:15,575] OS name = mac os x
+[INFO ] [2022-04-04 18:23:15,576] Driver instance name = edgedriver: msedge on mac (c9320c512cb405379f897680850ab379)
